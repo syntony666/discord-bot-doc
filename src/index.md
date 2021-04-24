@@ -3,7 +3,7 @@ home: true
 # heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline: 沈迷於玩弄工具人是否搞錯了什麼
 actionText: Link Start!! →
-actionLink: /guide/
+actionLink: /command/
 features:
 - title: 回覆功能
   details: 你叫他回什麼 他就回什麼
