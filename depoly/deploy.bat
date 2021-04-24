@@ -2,7 +2,7 @@ call npm run build
 
 cd ./src/.vuepress/dist
 
-echo 'discord-bot.syntony666.com' > CNAME
+echo discord-bot.syntony666.com > CNAME
 
 call git init
 call git add -A
