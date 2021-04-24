@@ -2,7 +2,7 @@ set -e
 
 npm run build
 
-cd docs/.vuepress/dist
+cd src/.vuepress/dist
 
 echo 'discord-bot.syntony666.com' > CNAME
 
