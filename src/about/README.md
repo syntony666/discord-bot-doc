@@ -5,7 +5,7 @@ sidebar: false
 ## 關於工具人
 前身是tvpc-bot與lego-bot，經過多日的淬煉製作而成的
 
-[工具人邀請連結](https://discord.com/api/oauth2/authorize?client_id=785855198279106582&permissions=0&scope=bot)
+[工具人邀請連結](https://discord.com/api/oauth2/authorize?client_id=785855198279106582&permissions=8&scope=bot)
 
 ## 關於作者
 
