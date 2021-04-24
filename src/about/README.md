@@ -17,6 +17,10 @@ Discord: [邀請連結](https://discord.gg/ZS4BMESszq)
 
 ## 版本紀錄
 
+### ver. 3.0.1
+#### 2021.4.25
+修正列表選單換頁功能Bug
+
 ### ver. 3.0.0
 #### 2021.4.24
 移植舊的tvpc-bot, lego-bot並整合大部分功能至工具人
