@@ -42,6 +42,10 @@ module.exports = {
         text: '關於',
         link: '/about/',
       },
+      {
+        text: '工具人邀請連結',
+        link: 'https://discord.com/api/oauth2/authorize?client_id=785855198279106582&permissions=8&scope=bot'
+      }
     ],
     sidebar: {
     }
