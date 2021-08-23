@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Install vue-page
+    name: Deploy Vuepress
     runs-on: macos-latest
     strategy:
       matrix:
