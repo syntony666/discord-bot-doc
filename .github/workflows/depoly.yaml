@@ -32,8 +32,8 @@ jobs:
         git init
         git remote add origin https://@github.com/syntony666/discord-bot-doc.git
         git add -A
-        git config --global user.name "tony"
-        git config --global user.email syntony666@outlook.com
+        git config --global user.name "syntony666"
+        git config --global user.email syntony666@github.com
         git commit -m 'deploy'
     - name: Depoly to GitHub Page
       uses: ad-m/github-push-action@master

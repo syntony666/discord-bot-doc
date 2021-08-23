@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         text: '工具人邀請連結',
-        link: 'https://discord.com/api/oauth2/authorize?client_id=785855198279106582&permissions=8&scope=bot'
+        link: 'https://discord.com/api/oauth2/authorize?client_id=878870568852672512&permissions=8&scope=bot'
       }
     ],
     sidebar: {
