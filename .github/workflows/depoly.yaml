@@ -23,8 +23,9 @@ jobs:
     - name: Build Site
       run: npm run build
     - name: Set CNAME
-      run: cd src/.vuepress/dist
-      run: echo discord-bot.syntony666.com > CNAME
+      run: |-
+        cd src/.vuepress/dist
+        echo discord-bot.syntony666.com > CNAME
     - name: Depoly to GitHub Page
       run: |-
         call git init
