@@ -28,6 +28,7 @@ jobs:
         echo discord-bot.syntony666.com > CNAME
     - name: Depoly to GitHub Page
       run: |-
+        cd src/.vuepress/dist
         git init
         git add -A
         git commit -m 'deploy'
