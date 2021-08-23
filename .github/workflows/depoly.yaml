@@ -30,9 +30,14 @@ jobs:
       run: |-
         cd src/.vuepress/dist
         git init
-        git remote add origin https://github.com/syntony666/discord-bot-doc.git
+        git remote add origin https://@github.com/syntony666/discord-bot-doc.git
         git add -A
         git config --global user.name "tony"
         git config --global user.email syntony666@outlook.com
         git commit -m 'deploy'
-        git push -f origin master:gh-pages
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'gh-pages'
+        force: true
+        directory: 'src/.vuepress/dist'
