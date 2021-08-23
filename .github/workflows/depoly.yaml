@@ -8,8 +8,9 @@ jobs:
   build:
     name: Install vue-page
     runs-on: ubuntu-latest
-    working-directory: client
     steps:
+    - working-directory: client
+    - uses: actions/checkout@v2
     - name: Install dependencies
       run: npm ci
     - name: Build Site
@@ -23,4 +24,3 @@ jobs:
         call git add -A
         call git commit -m 'deploy'
         call git push -f https://github.com/syntony666/discord-bot-doc.git master:gh-pages
-
