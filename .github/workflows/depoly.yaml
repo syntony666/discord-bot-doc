@@ -26,7 +26,7 @@ jobs:
       run: |-
         cd src/.vuepress/dist
         echo discord-bot.syntony666.com > CNAME
-    - name: Depoly to GitHub Page
+    - name: Commit the Page
       run: |-
         cd src/.vuepress/dist
         git init
@@ -35,6 +35,7 @@ jobs:
         git config --global user.name "tony"
         git config --global user.email syntony666@outlook.com
         git commit -m 'deploy'
+    - name: Depoly to GitHub Page
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
