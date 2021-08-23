@@ -8,9 +8,10 @@ jobs:
   build:
     name: Install vue-page
     runs-on: ubuntu-latest
+    uses: actions/setup-node@v1
     steps:
     - name: Install dependencies
-      run: npm install
+      run: npm ci
     - name: Build Site
       run: npm run build
     - name: Set CNAME
