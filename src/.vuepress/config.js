@@ -1,4 +1,5 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
+const { defaultTheme } = require('@vuepress/theme-default');
 
 module.exports = {
   /**
@@ -9,7 +10,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
-  theme: 'default-prefers-color-scheme',
+  theme: '@vuepress/theme-default',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -27,13 +28,14 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
-  themeConfig: {
+  theme: defaultTheme({
+    colorMode: 'dark',
     repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
+    navbar: [
       {
         text: '指令說明',
         link: '/command/'
@@ -49,7 +51,7 @@ module.exports = {
     ],
     sidebar: {
     }
-  },
+  }),
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
