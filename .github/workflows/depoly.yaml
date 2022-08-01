@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: Deploy Vuepress
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [12.x]
@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
-      run: npm install
+      run: yarn install
     - name: Build Site
       run: npm run build
     - name: Set CNAME
